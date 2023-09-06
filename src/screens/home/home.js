@@ -25,7 +25,7 @@ const Home = () => {
     }
     })
     .catch((error) => {
-    console.log(`Error with pure-headless/teaser. ${error.toJSON()}`);
+    console.log(`Error with pure-headless/teaser. ${error}`);
     });
     //imagelist persistent query
     sdk.runPersistedQuery('pure-headless/imagelist')
@@ -35,7 +35,7 @@ const Home = () => {
         }
     })
     .catch((error) => {
-        console.log(`Error with pure-headless/imagelist. ${error.toJSON()}`);
+        console.log(`Error with pure-headless/imagelist. ${error}`);
     });
   }, [context]);
 
